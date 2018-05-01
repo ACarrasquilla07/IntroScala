@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/progFuncional2018.iml" filepath="$PROJECT_DIR$/.idea/progFuncional2018.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/progfuncional2018.iml" filepath="$PROJECT_DIR$/.idea/modules/progfuncional2018.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/progfuncional2018-build.iml" filepath="$PROJECT_DIR$/.idea/modules/progfuncional2018-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/basic-db-connection.iml" filepath="$PROJECT_DIR$/.idea/modules/basic-db-connection.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/basic-db-connection-build.iml" filepath="$PROJECT_DIR$/.idea/modules/basic-db-connection-build.iml" />
     </modules>
   </component>
 </project>
