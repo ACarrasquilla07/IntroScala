@@ -6,3 +6,6 @@ test
 run sbt testQuick
 test
 exit
+test
+all test
+exit
