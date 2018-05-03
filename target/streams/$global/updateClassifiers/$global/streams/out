@@ -5,7 +5,7 @@
 [debug] resolving dependencies for configuration 'compile'
 [debug] == resolving dependencies for hello#hello$sources;1.0 [compile]
 [debug] == resolving dependencies hello#hello$sources;1.0->org.scala-lang#scala-library;2.10.2 [compile->default]
-[debug] sbt-chain: Checking cache for: dependency: org.scala-lang#scala-library;2.10.2 {compile=[default, compile, runtime, default(compile), master], runtime=[default, compile, runtime, default(compile), master], test=[default, compile, runtime, default(compile), master], compile-internal=[default, compile, runtime, default(compile), master], runtime-internal=[default, compile, runtime, default(compile), master], test-internal=[default, compile, runtime, default(compile), master], scala-tool=[default, compile, runtime(*), master(compile), runtime, optional, optional(default), compile(*), master]}
+[debug] sbt-chain: Checking cache for: dependency: org.scala-lang#scala-library;2.10.2 {compile=[default, compile, runtime, default(compile), master], runtime=[default, compile, runtime, default(compile), master], test=[default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master], compile-internal=[default, compile, runtime, default(compile), master], runtime-internal=[default, compile, runtime, default(compile), master], test-internal=[default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master], scala-tool=[default, compile, runtime(*), master(compile), runtime, optional, optional(default), compile(*), master]}
 [debug] sbt-chain: module revision found in cache: org.scala-lang#scala-library;2.10.2
 [debug] 	found org.scala-lang#scala-library;2.10.2 in sbt-chain
 [debug] 	[2.10.2] org.scala-lang#scala-library;2.10.2
@@ -63,6 +63,10 @@
 [debug] == resolving dependencies hello#hello$sources;1.0->org.scala-lang#scala-library;2.10.2 [compile->compile]
 [debug] == resolving dependencies hello#hello$sources;1.0->org.scala-lang#scala-library;2.10.2 [compile->master]
 [debug] == resolving dependencies hello#hello$sources;1.0->org.scala-lang#scala-library;2.10.2 [compile->master]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scala-lang#scala-library;2.10.2 [compile->runtime(*)]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scala-lang#scala-library;2.10.2 [compile->compile]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scala-lang#scala-library;2.10.2 [compile->master(compile)]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scala-lang#scala-library;2.10.2 [compile->compile(*)]
 [debug] == resolving dependencies hello#hello$sources;1.0->org.scala-lang#scala-library;2.10.2 [runtime->default]
 [debug] == resolving dependencies hello#hello$sources;1.0->org.scala-lang#scala-library;2.10.2 [runtime->runtime]
 [debug] == resolving dependencies hello#hello$sources;1.0->org.scala-lang#scala-library;2.10.2 [runtime->compile]
@@ -75,18 +79,60 @@
 [debug] == resolving dependencies hello#hello$sources;1.0->org.scala-lang#scala-library;2.10.2 [runtime->compile]
 [debug] == resolving dependencies hello#hello$sources;1.0->org.scala-lang#scala-library;2.10.2 [runtime->master]
 [debug] == resolving dependencies hello#hello$sources;1.0->org.scala-lang#scala-library;2.10.2 [runtime->master]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scala-lang#scala-reflect;2.10.2 [test->compile]
+[debug] sbt-chain: Checking cache for: dependency: org.scala-lang#scala-reflect;2.10.2 {test=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], scala-tool=[compile, runtime(*), master(compile), runtime, compile(*), master]}
+[debug] sbt-chain: module revision found in cache: org.scala-lang#scala-reflect;2.10.2
+[debug] 	found org.scala-lang#scala-reflect;2.10.2 in sbt-chain
+[debug] 	[2.10.2] org.scala-lang#scala-reflect;2.10.2
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scala-lang#scala-reflect;2.10.2 [test->runtime(*)]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scala-lang#scala-reflect;2.10.2 [test->compile]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scala-lang#scala-reflect;2.10.2 [test->master(compile)]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scala-lang#scala-reflect;2.10.2 [test->runtime]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scala-lang#scala-reflect;2.10.2 [test->compile]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scala-lang#scala-reflect;2.10.2 [test->compile(*)]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scala-lang#scala-reflect;2.10.2 [test->master]
 [debug] == resolving dependencies hello#hello$sources;1.0->org.scala-lang#scala-library;2.10.2 [test->default]
 [debug] == resolving dependencies hello#hello$sources;1.0->org.scala-lang#scala-library;2.10.2 [test->runtime]
 [debug] == resolving dependencies hello#hello$sources;1.0->org.scala-lang#scala-library;2.10.2 [test->compile]
 [debug] == resolving dependencies hello#hello$sources;1.0->org.scala-lang#scala-library;2.10.2 [test->master]
 [debug] == resolving dependencies hello#hello$sources;1.0->org.scala-lang#scala-library;2.10.2 [test->compile]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scala-lang#scala-library;2.10.2 [test->runtime(*)]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scala-lang#scala-library;2.10.2 [test->compile]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scala-lang#scala-library;2.10.2 [test->master(compile)]
 [debug] == resolving dependencies hello#hello$sources;1.0->org.scala-lang#scala-library;2.10.2 [test->runtime]
 [debug] == resolving dependencies hello#hello$sources;1.0->org.scala-lang#scala-library;2.10.2 [test->compile]
 [debug] == resolving dependencies hello#hello$sources;1.0->org.scala-lang#scala-library;2.10.2 [test->default(compile)]
 [debug] == resolving dependencies hello#hello$sources;1.0->org.scala-lang#scala-library;2.10.2 [test->runtime]
 [debug] == resolving dependencies hello#hello$sources;1.0->org.scala-lang#scala-library;2.10.2 [test->compile]
 [debug] == resolving dependencies hello#hello$sources;1.0->org.scala-lang#scala-library;2.10.2 [test->master]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scala-lang#scala-library;2.10.2 [test->compile(*)]
 [debug] == resolving dependencies hello#hello$sources;1.0->org.scala-lang#scala-library;2.10.2 [test->master]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scalatest#scalatest_2.10;3.0.5 [test->default]
+[debug] sbt-chain: Checking cache for: dependency: org.scalatest#scalatest_2.10;3.0.5 {test=[default, compile, runtime, default(compile), master], test-internal=[default, compile, runtime, default(compile), master]}
+[debug] sbt-chain: module revision found in cache: org.scalatest#scalatest_2.10;3.0.5
+[debug] 	found org.scalatest#scalatest_2.10;3.0.5 in sbt-chain
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scalatest#scalatest_2.10;3.0.5 [test->runtime]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scalatest#scalatest_2.10;3.0.5 [test->compile]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scalatest#scalatest_2.10;3.0.5 [test->master]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scalatest#scalatest_2.10;3.0.5 [test->compile]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scalatest#scalatest_2.10;3.0.5 [test->runtime]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scalatest#scalatest_2.10;3.0.5 [test->compile]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scalatest#scalatest_2.10;3.0.5 [test->default(compile)]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scalatest#scalatest_2.10;3.0.5 [test->runtime]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scalatest#scalatest_2.10;3.0.5 [test->compile]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scalatest#scalatest_2.10;3.0.5 [test->master]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scalatest#scalatest_2.10;3.0.5 [test->master]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scalactic#scalactic_2.10;3.0.5 [test->compile]
+[debug] sbt-chain: Checking cache for: dependency: org.scalactic#scalactic_2.10;3.0.5 {test=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]}
+[debug] sbt-chain: module revision found in cache: org.scalactic#scalactic_2.10;3.0.5
+[debug] 	found org.scalactic#scalactic_2.10;3.0.5 in sbt-chain
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scalactic#scalactic_2.10;3.0.5 [test->runtime(*)]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scalactic#scalactic_2.10;3.0.5 [test->compile]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scalactic#scalactic_2.10;3.0.5 [test->master(compile)]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scalactic#scalactic_2.10;3.0.5 [test->runtime]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scalactic#scalactic_2.10;3.0.5 [test->compile]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scalactic#scalactic_2.10;3.0.5 [test->compile(*)]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scalactic#scalactic_2.10;3.0.5 [test->master]
 [debug] resolving dependencies for configuration 'provided'
 [debug] == resolving dependencies for hello#hello$sources;1.0 [provided]
 [debug] resolving dependencies for configuration 'optional'
@@ -190,32 +236,96 @@
 [debug] == resolving dependencies hello#hello$sources;1.0->org.scala-lang#scala-library;2.10.2 [runtime->compile]
 [debug] == resolving dependencies hello#hello$sources;1.0->org.scala-lang#scala-library;2.10.2 [runtime->master]
 [debug] == resolving dependencies hello#hello$sources;1.0->org.scala-lang#scala-library;2.10.2 [runtime->master]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scala-lang#scala-reflect;2.10.2 [test->compile]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scala-lang#scala-reflect;2.10.2 [test->runtime(*)]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scala-lang#scala-reflect;2.10.2 [test->compile]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scala-lang#scala-reflect;2.10.2 [test->master(compile)]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scala-lang#scala-reflect;2.10.2 [test->runtime]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scala-lang#scala-reflect;2.10.2 [test->compile]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scala-lang#scala-reflect;2.10.2 [test->compile(*)]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scala-lang#scala-reflect;2.10.2 [test->master]
 [debug] == resolving dependencies hello#hello$sources;1.0->org.scala-lang#scala-library;2.10.2 [test->default]
 [debug] == resolving dependencies hello#hello$sources;1.0->org.scala-lang#scala-library;2.10.2 [test->runtime]
 [debug] == resolving dependencies hello#hello$sources;1.0->org.scala-lang#scala-library;2.10.2 [test->compile]
 [debug] == resolving dependencies hello#hello$sources;1.0->org.scala-lang#scala-library;2.10.2 [test->master]
 [debug] == resolving dependencies hello#hello$sources;1.0->org.scala-lang#scala-library;2.10.2 [test->compile]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scala-lang#scala-library;2.10.2 [test->runtime(*)]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scala-lang#scala-library;2.10.2 [test->compile]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scala-lang#scala-library;2.10.2 [test->master(compile)]
 [debug] == resolving dependencies hello#hello$sources;1.0->org.scala-lang#scala-library;2.10.2 [test->runtime]
 [debug] == resolving dependencies hello#hello$sources;1.0->org.scala-lang#scala-library;2.10.2 [test->compile]
 [debug] == resolving dependencies hello#hello$sources;1.0->org.scala-lang#scala-library;2.10.2 [test->default(compile)]
 [debug] == resolving dependencies hello#hello$sources;1.0->org.scala-lang#scala-library;2.10.2 [test->runtime]
 [debug] == resolving dependencies hello#hello$sources;1.0->org.scala-lang#scala-library;2.10.2 [test->compile]
 [debug] == resolving dependencies hello#hello$sources;1.0->org.scala-lang#scala-library;2.10.2 [test->master]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scala-lang#scala-library;2.10.2 [test->compile(*)]
 [debug] == resolving dependencies hello#hello$sources;1.0->org.scala-lang#scala-library;2.10.2 [test->master]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scalatest#scalatest_2.10;3.0.5 [test->default]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scalatest#scalatest_2.10;3.0.5 [test->runtime]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scalatest#scalatest_2.10;3.0.5 [test->compile]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scalatest#scalatest_2.10;3.0.5 [test->master]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scalatest#scalatest_2.10;3.0.5 [test->compile]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scalatest#scalatest_2.10;3.0.5 [test->runtime]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scalatest#scalatest_2.10;3.0.5 [test->compile]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scalatest#scalatest_2.10;3.0.5 [test->default(compile)]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scalatest#scalatest_2.10;3.0.5 [test->runtime]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scalatest#scalatest_2.10;3.0.5 [test->compile]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scalatest#scalatest_2.10;3.0.5 [test->master]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scalatest#scalatest_2.10;3.0.5 [test->master]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scalactic#scalactic_2.10;3.0.5 [test->compile]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scalactic#scalactic_2.10;3.0.5 [test->runtime(*)]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scalactic#scalactic_2.10;3.0.5 [test->compile]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scalactic#scalactic_2.10;3.0.5 [test->master(compile)]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scalactic#scalactic_2.10;3.0.5 [test->runtime]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scalactic#scalactic_2.10;3.0.5 [test->compile]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scalactic#scalactic_2.10;3.0.5 [test->compile(*)]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scalactic#scalactic_2.10;3.0.5 [test->master]
 [debug] == resolving dependencies for hello#hello$sources;1.0 [optional]
 [debug] == resolving dependencies for hello#hello$sources;1.0 [provided]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scala-lang#scala-reflect;2.10.2 [test-internal->compile]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scala-lang#scala-reflect;2.10.2 [test-internal->runtime(*)]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scala-lang#scala-reflect;2.10.2 [test-internal->compile]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scala-lang#scala-reflect;2.10.2 [test-internal->master(compile)]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scala-lang#scala-reflect;2.10.2 [test-internal->runtime]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scala-lang#scala-reflect;2.10.2 [test-internal->compile]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scala-lang#scala-reflect;2.10.2 [test-internal->compile(*)]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scala-lang#scala-reflect;2.10.2 [test-internal->master]
 [debug] == resolving dependencies hello#hello$sources;1.0->org.scala-lang#scala-library;2.10.2 [test-internal->default]
 [debug] == resolving dependencies hello#hello$sources;1.0->org.scala-lang#scala-library;2.10.2 [test-internal->runtime]
 [debug] == resolving dependencies hello#hello$sources;1.0->org.scala-lang#scala-library;2.10.2 [test-internal->compile]
 [debug] == resolving dependencies hello#hello$sources;1.0->org.scala-lang#scala-library;2.10.2 [test-internal->master]
 [debug] == resolving dependencies hello#hello$sources;1.0->org.scala-lang#scala-library;2.10.2 [test-internal->compile]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scala-lang#scala-library;2.10.2 [test-internal->runtime(*)]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scala-lang#scala-library;2.10.2 [test-internal->compile]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scala-lang#scala-library;2.10.2 [test-internal->master(compile)]
 [debug] == resolving dependencies hello#hello$sources;1.0->org.scala-lang#scala-library;2.10.2 [test-internal->runtime]
 [debug] == resolving dependencies hello#hello$sources;1.0->org.scala-lang#scala-library;2.10.2 [test-internal->compile]
 [debug] == resolving dependencies hello#hello$sources;1.0->org.scala-lang#scala-library;2.10.2 [test-internal->default(compile)]
 [debug] == resolving dependencies hello#hello$sources;1.0->org.scala-lang#scala-library;2.10.2 [test-internal->runtime]
 [debug] == resolving dependencies hello#hello$sources;1.0->org.scala-lang#scala-library;2.10.2 [test-internal->compile]
 [debug] == resolving dependencies hello#hello$sources;1.0->org.scala-lang#scala-library;2.10.2 [test-internal->master]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scala-lang#scala-library;2.10.2 [test-internal->compile(*)]
 [debug] == resolving dependencies hello#hello$sources;1.0->org.scala-lang#scala-library;2.10.2 [test-internal->master]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scalatest#scalatest_2.10;3.0.5 [test-internal->default]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scalatest#scalatest_2.10;3.0.5 [test-internal->runtime]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scalatest#scalatest_2.10;3.0.5 [test-internal->compile]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scalatest#scalatest_2.10;3.0.5 [test-internal->master]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scalatest#scalatest_2.10;3.0.5 [test-internal->compile]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scalatest#scalatest_2.10;3.0.5 [test-internal->runtime]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scalatest#scalatest_2.10;3.0.5 [test-internal->compile]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scalatest#scalatest_2.10;3.0.5 [test-internal->default(compile)]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scalatest#scalatest_2.10;3.0.5 [test-internal->runtime]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scalatest#scalatest_2.10;3.0.5 [test-internal->compile]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scalatest#scalatest_2.10;3.0.5 [test-internal->master]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scalatest#scalatest_2.10;3.0.5 [test-internal->master]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scalactic#scalactic_2.10;3.0.5 [test-internal->compile]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scalactic#scalactic_2.10;3.0.5 [test-internal->runtime(*)]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scalactic#scalactic_2.10;3.0.5 [test-internal->compile]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scalactic#scalactic_2.10;3.0.5 [test-internal->master(compile)]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scalactic#scalactic_2.10;3.0.5 [test-internal->runtime]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scalactic#scalactic_2.10;3.0.5 [test-internal->compile]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scalactic#scalactic_2.10;3.0.5 [test-internal->compile(*)]
+[debug] == resolving dependencies hello#hello$sources;1.0->org.scalactic#scalactic_2.10;3.0.5 [test-internal->master]
 [debug] resolving dependencies for configuration 'plugin'
 [debug] == resolving dependencies for hello#hello$sources;1.0 [plugin]
 [debug] resolving dependencies for configuration 'pom'
@@ -223,10 +333,6 @@
 [debug] resolving dependencies for configuration 'scala-tool'
 [debug] == resolving dependencies for hello#hello$sources;1.0 [scala-tool]
 [debug] == resolving dependencies hello#hello$sources;1.0->org.scala-lang#scala-reflect;2.10.2 [scala-tool->compile]
-[debug] sbt-chain: Checking cache for: dependency: org.scala-lang#scala-reflect;2.10.2 {scala-tool=[compile, runtime(*), master(compile), runtime, compile(*), master]}
-[debug] sbt-chain: module revision found in cache: org.scala-lang#scala-reflect;2.10.2
-[debug] 	found org.scala-lang#scala-reflect;2.10.2 in sbt-chain
-[debug] 	[2.10.2] org.scala-lang#scala-reflect;2.10.2
 [debug] == resolving dependencies hello#hello$sources;1.0->org.scala-lang#scala-reflect;2.10.2 [scala-tool->runtime(*)]
 [debug] == resolving dependencies hello#hello$sources;1.0->org.scala-lang#scala-reflect;2.10.2 [scala-tool->compile]
 [debug] == resolving dependencies hello#hello$sources;1.0->org.scala-lang#scala-reflect;2.10.2 [scala-tool->master(compile)]
@@ -277,41 +383,16 @@
 [debug] == resolving dependencies hello#hello$sources;1.0->org.scala-lang#scala-compiler;2.10.2 [scala-tool->master]
 [debug] 	resolved ivy file produced in cache
 [debug] :: downloading artifacts ::
-[debug] 		tried /home/andres/.ivy2/local/org.scala-lang/jline/2.10.2/srcs/jline-sources.jar
-[debug] 		tried /home/andres/.ivy2/local/org.scala-lang/scala-reflect/2.10.2/srcs/scala-reflect-sources.jar
-[debug] 		tried /home/andres/.ivy2/local/org.scala-lang/scala-library/2.10.2/srcs/scala-library-sources.jar
-[debug] 		tried /home/andres/.ivy2/local/org.fusesource.jansi/jansi/1.4/srcs/jansi-sources.jar
-[debug] 		tried /home/andres/.ivy2/local/org.scala-lang/scala-compiler/2.10.2/srcs/scala-compiler-sources.jar
+[debug] 	[NOT REQUIRED] org.scala-lang#scala-library;2.10.2!scala-library.jar(src)
 [debug] no default ivy user dir defined: set to /home/andres/.ivy2
-[debug] no default ivy user dir defined: set to /home/andres/.ivy2
-[debug] no default ivy user dir defined: set to /home/andres/.ivy2
-[debug] no default ivy user dir defined: set to /home/andres/.ivy2
-[debug] no default ivy user dir defined: set to /home/andres/.ivy2
-[debug] including url: jar:file:/home/andres/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
-[debug] including url: jar:file:/home/andres/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
-[debug] including url: jar:file:/home/andres/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
-[debug] including url: jar:file:/home/andres/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
+[debug] 	[NOT REQUIRED] org.scala-lang#scala-reflect;2.10.2!scala-reflect.jar(src)
 [debug] including url: jar:file:/home/andres/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
 [debug] no default cache defined: set to /home/andres/.ivy2/cache
 [debug] including url: jar:file:/home/andres/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
-[debug] no default cache defined: set to /home/andres/.ivy2/cache
-[debug] including url: jar:file:/home/andres/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
-[debug] no default cache defined: set to /home/andres/.ivy2/cache
-[debug] including url: jar:file:/home/andres/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
-[debug] including url: jar:file:/home/andres/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
-[debug] no default cache defined: set to /home/andres/.ivy2/cache
-[debug] including url: jar:file:/home/andres/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
-[debug] including url: jar:file:/home/andres/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
-[debug] including url: jar:file:/home/andres/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
-[debug] including url: jar:file:/home/andres/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
 [debug] including url: jar:file:/home/andres/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
 [debug] including url: jar:file:/home/andres/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
 [debug] including url: jar:file:/home/andres/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
-[debug] including url: jar:file:/home/andres/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
-[debug] no default cache defined: set to /home/andres/.ivy2/cache
-[debug] including url: jar:file:/home/andres/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
-[debug] including url: jar:file:/home/andres/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
-[debug] settings loaded (81ms)
+[debug] settings loaded (23ms)
 [debug] 	default cache: /home/andres/.ivy2/cache
 [debug] 	default resolver: default
 [debug] 	-- 5 resolvers:
@@ -320,12 +401,37 @@
 [debug] 	public [ibiblio]
 [debug] 	main [chain] [shared, public]
 [debug] 	local [file]
-[debug] 		tried https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.10.2/scala-reflect-2.10.2-sources.jar
+[debug] 	[NOT REQUIRED] org.scala-lang#jline;2.10.2!jline.jar(src)
+[debug] 		tried /home/andres/.ivy2/local/org.scalactic/scalactic_2.10/3.0.5/srcs/scalactic_2.10-sources.jar
+[debug] 		tried /home/andres/.ivy2/local/org.scalatest/scalatest_2.10/3.0.5/srcs/scalatest_2.10-sources.jar
+[debug] 	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar(src)
+[debug] 		tried https://repo1.maven.org/maven2/org/scalactic/scalactic_2.10/3.0.5/scalactic_2.10-3.0.5-sources.jar
+[debug] no default ivy user dir defined: set to /home/andres/.ivy2
+[debug] including url: jar:file:/home/andres/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
+[debug] no default cache defined: set to /home/andres/.ivy2/cache
+[debug] including url: jar:file:/home/andres/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
+[debug] including url: jar:file:/home/andres/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
+[debug] 	[NOT REQUIRED] org.scala-lang#scala-compiler;2.10.2!scala-compiler.jar(src)
+[debug] including url: jar:file:/home/andres/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
+[debug] 		tried https://repo1.maven.org/maven2/org/scalatest/scalatest_2.10/3.0.5/scalatest_2.10-3.0.5-sources.jar
+[debug] no default ivy user dir defined: set to /home/andres/.ivy2
+[debug] including url: jar:file:/home/andres/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
+[debug] including url: jar:file:/home/andres/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
+[debug] no default cache defined: set to /home/andres/.ivy2/cache
+[debug] including url: jar:file:/home/andres/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
+[debug] settings loaded (26ms)
+[debug] 	default cache: /home/andres/.ivy2/cache
+[debug] 	default resolver: default
+[debug] 	-- 5 resolvers:
+[debug] 	shared [file]
+[debug] 	default [chain] [local, main]
+[debug] 	public [ibiblio]
+[debug] 	main [chain] [shared, public]
+[debug] 	local [file]
 [debug] including url: jar:file:/home/andres/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
 [debug] including url: jar:file:/home/andres/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
 [debug] including url: jar:file:/home/andres/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
-[debug] including url: jar:file:/home/andres/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
-[debug] settings loaded (98ms)
+[debug] settings loaded (26ms)
 [debug] 	default cache: /home/andres/.ivy2/cache
 [debug] 	default resolver: default
 [debug] 	-- 5 resolvers:
@@ -334,65 +440,17 @@
 [debug] 	public [ibiblio]
 [debug] 	main [chain] [shared, public]
 [debug] 	local [file]
-[debug] settings loaded (105ms)
-[debug] 	default cache: /home/andres/.ivy2/cache
-[debug] 	default resolver: default
-[debug] 	-- 5 resolvers:
-[debug] 	shared [file]
-[debug] 	default [chain] [local, main]
-[debug] 	public [ibiblio]
-[debug] 	main [chain] [shared, public]
-[debug] 	local [file]
-[debug] 		tried https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.10.2/scala-compiler-2.10.2-sources.jar
-[debug] settings loaded (102ms)
-[debug] 	default cache: /home/andres/.ivy2/cache
-[debug] 	default resolver: default
-[debug] 	-- 5 resolvers:
-[debug] 	shared [file]
-[debug] 	default [chain] [local, main]
-[debug] 	public [ibiblio]
-[debug] 	main [chain] [shared, public]
-[debug] 	local [file]
-[debug] including url: jar:file:/home/andres/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
-[debug] 		tried https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.10.2/scala-library-2.10.2-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/org/scala-lang/jline/2.10.2/jline-2.10.2-sources.jar
-[debug] including url: jar:file:/home/andres/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
-[debug] settings loaded (122ms)
-[debug] 	default cache: /home/andres/.ivy2/cache
-[debug] 	default resolver: default
-[debug] 	-- 5 resolvers:
-[debug] 	shared [file]
-[debug] 	default [chain] [local, main]
-[debug] 	public [ibiblio]
-[debug] 	main [chain] [shared, public]
-[debug] 	local [file]
-[debug] 		tried https://repo1.maven.org/maven2/org/fusesource/jansi/jansi/1.4/jansi-1.4-sources.jar
-[info] downloading https://repo1.maven.org/maven2/org/fusesource/jansi/jansi/1.4/jansi-1.4-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/fusesource/jansi/jansi/1.4/jansi-1.4-sources.jar
-[info] downloading https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.10.2/scala-compiler-2.10.2-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.10.2/scala-compiler-2.10.2-sources.jar
-[info] downloading https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.10.2/scala-reflect-2.10.2-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.10.2/scala-reflect-2.10.2-sources.jar
-[info] downloading https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.10.2/scala-library-2.10.2-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.10.2/scala-library-2.10.2-sources.jar
-[info] downloading https://repo1.maven.org/maven2/org/scala-lang/jline/2.10.2/jline-2.10.2-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/jline/2.10.2/jline-2.10.2-sources.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/fusesource/jansi/jansi/1.4/jansi-1.4-sources.jar.sha1
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/jline/2.10.2/jline-2.10.2-sources.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/fusesource/jansi/jansi/1.4/jansi-1.4-sources.jar
-[info] 	[SUCCESSFUL ] org.fusesource.jansi#jansi;1.4!jansi.jar(src) (1618ms)
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/scala-lang/jline/2.10.2/jline-2.10.2-sources.jar
-[info] 	[SUCCESSFUL ] org.scala-lang#jline;2.10.2!jline.jar(src) (2160ms)
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.10.2/scala-reflect-2.10.2-sources.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.10.2/scala-reflect-2.10.2-sources.jar
-[info] 	[SUCCESSFUL ] org.scala-lang#scala-reflect;2.10.2!scala-reflect.jar(src) (2642ms)
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.10.2/scala-library-2.10.2-sources.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.10.2/scala-library-2.10.2-sources.jar
-[info] 	[SUCCESSFUL ] org.scala-lang#scala-library;2.10.2!scala-library.jar(src) (2965ms)
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.10.2/scala-compiler-2.10.2-sources.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.10.2/scala-compiler-2.10.2-sources.jar
-[info] 	[SUCCESSFUL ] org.scala-lang#scala-compiler;2.10.2!scala-compiler.jar(src) (4204ms)
-[debug] :: resolution report :: resolve 566ms :: artifacts dl 4377ms
+[info] downloading https://repo1.maven.org/maven2/org/scalactic/scalactic_2.10/3.0.5/scalactic_2.10-3.0.5-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/scalactic/scalactic_2.10/3.0.5/scalactic_2.10-3.0.5-sources.jar
+[info] downloading https://repo1.maven.org/maven2/org/scalatest/scalatest_2.10/3.0.5/scalatest_2.10-3.0.5-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/scalatest/scalatest_2.10/3.0.5/scalatest_2.10-3.0.5-sources.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/scalactic/scalactic_2.10/3.0.5/scalactic_2.10-3.0.5-sources.jar.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/org/scalactic/scalactic_2.10/3.0.5/scalactic_2.10-3.0.5-sources.jar
+[info] 	[SUCCESSFUL ] org.scalactic#scalactic_2.10;3.0.5!scalactic_2.10.jar(src) (543ms)
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/scalatest/scalatest_2.10/3.0.5/scalatest_2.10-3.0.5-sources.jar.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/org/scalatest/scalatest_2.10/3.0.5/scalatest_2.10-3.0.5-sources.jar
+[info] 	[SUCCESSFUL ] org.scalatest#scalatest_2.10;3.0.5!scalatest_2.10.jar(src) (1851ms)
+[debug] :: resolution report :: resolve 74ms :: artifacts dl 1907ms
 [debug] 	report for hello#hello$sources;1.0 compile produced in /home/andres/IdeaProjects/progFuncional2018/target/scala-2.10/resolution-cache/reports/hello-hello$sources-compile.xml
 [debug] 	report for hello#hello$sources;1.0 runtime produced in /home/andres/IdeaProjects/progFuncional2018/target/scala-2.10/resolution-cache/reports/hello-hello$sources-runtime.xml
 [debug] 	report for hello#hello$sources;1.0 test produced in /home/andres/IdeaProjects/progFuncional2018/target/scala-2.10/resolution-cache/reports/hello-hello$sources-test.xml
@@ -404,4 +462,4 @@
 [debug] 	report for hello#hello$sources;1.0 plugin produced in /home/andres/IdeaProjects/progFuncional2018/target/scala-2.10/resolution-cache/reports/hello-hello$sources-plugin.xml
 [debug] 	report for hello#hello$sources;1.0 pom produced in /home/andres/IdeaProjects/progFuncional2018/target/scala-2.10/resolution-cache/reports/hello-hello$sources-pom.xml
 [debug] 	report for hello#hello$sources;1.0 scala-tool produced in /home/andres/IdeaProjects/progFuncional2018/target/scala-2.10/resolution-cache/reports/hello-hello$sources-scala-tool.xml
-[debug] 	resolve done (566ms resolve - 4377ms download)
+[debug] 	resolve done (74ms resolve - 1907ms download)

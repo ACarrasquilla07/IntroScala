@@ -1,1 +1,8 @@
 exit
+test
+run
+exit
+test
+run sbt testQuick
+test
+exit
